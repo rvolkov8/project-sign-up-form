@@ -93,6 +93,35 @@ body {
     outline: solid 1.5px rgb(255, 0, 0);
 }
 
+.error {
+    outline: solid 1.5px rgb(255, 0, 0);
+}
+
+.no-match,
+.no-password {
+    position: relative;
+}
+
+.no-match::after {
+    content: "* Passwords do not match";
+    font-size: 0.6rem;
+    color: red;
+    
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.no-password::after {
+    content: "* Please, enter a password";
+    font-size: 0.6rem;
+    color: red;
+    
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
 .button-section {
     padding: 25px 25px;
 }
